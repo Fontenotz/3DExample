@@ -1,0 +1,28 @@
+cls
+
+load bitmap "horse1.jpg"
+get image 5,0,0,40,35
+
+
+x=300
+make object cube 2,100
+scale object 2,25,25,25
+repeat
+  ink rgb(rnd(255),rnd(255),rnd(255)),0
+  position object 2,x,0,0
+  sleep  50
+  x=x-5
+  texture object 2,5
+until mouseclick()=1
+end
+
+remstart
+  Make it move faster
+  Make cube a different color
+  Make cube continually change colors
+  Move in opposite direction (keft to right)
+  Move from top center of screen down
+  How about a cylinder instead of a cube?
+  Can you 'texture it'?
+  Can you add a second object moving on the screen?
+remend
